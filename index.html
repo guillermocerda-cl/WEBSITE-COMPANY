@@ -50,7 +50,6 @@
 
     /* 2. FIX PARA IMÁGENES Y SECCIONES EN MÓVIL */
     @media screen and (max-width: 980px) {
-        /* Forzar que las imágenes de fondo se vean en móvil */
         .spotlight .image.main {
             position: relative !important;
             height: 250px !important;
@@ -65,8 +64,8 @@
             height: 100% !important;
         }
 
-        /* Ajuste de contenido para legibilidad */
-        #two .content, #three .content {
+        /* Ajuste de contenido usando los nuevos IDs */
+        #servicios .content, #consultoria .content {
             width: 100% !important;
             max-width: 100% !important;
             min-width: 100% !important;
@@ -76,7 +75,7 @@
             background: rgba(15, 24, 45, 0.98) !important;
         }
         
-        #two, #three { min-height: auto !important; height: auto !important; }
+        #servicios, #consultoria { min-height: auto !important; height: auto !important; }
     }
 </style>
 	</head>
@@ -89,23 +88,23 @@
                     <ul>
                         <li><a href="index.html">Inicio</a></li>
                         <li>
-                            <a href="#two">Servicios</a>
+                            <a href="#servicios">Servicios</a>
                             <ul>
-                                <li><a href="#two">Ingeniería de Proyectos</a></li>
-                                <li><a href="#two">Certificación SEC</a></li>
-                                <li><a href="#two">Gestión de Activos</a></li>
+                                <li><a href="#servicios">Ingeniería de Proyectos</a></li>
+                                <li><a href="#servicios">Certificación SEC</a></li>
+                                <li><a href="#servicios">Gestión de Activos</a></li>
                                 <li>
                                     <a href="#">Consultoría Especializada</a>
                                     <ul>
-                                        <li><a href="#three">Optimización de Procesos</a></li>
-                                        <li><a href="#three">Rentabilidad de Activos</a></li>
-                                        <li><a href="#four">Continuidad Operativa</a></li>
+                                        <li><a href="#consultoria">Optimización de Procesos</a></li>
+                                        <li><a href="#consultoria">Rentabilidad de Activos</a></li>
+                                        <li><a href="#capacidades">Continuidad Operativa</a></li>
                                     </ul>
                                 </li>
                             </ul>
                         </li>
-                        <li><a href="#four">Capacidades</a></li>
-                        <li><a href="#five" class="button primary">Solicitar Factibilidad</a></li>
+                        <li><a href="#capacidades">Capacidades</a></li>
+                        <li><a href="#contacto" class="button primary">Solicitar Factibilidad</a></li>
                     </ul>
                 </nav>
             </header>
@@ -119,7 +118,7 @@
                     <div class="logo-escena">
                         <div class="logo-tarjeta">
                             <div class="cara frente">
-                                <img src="images/logo.png" alt="E&M Solutions">
+                                <img src="./images/logo.png" alt="E&M Solutions">
                             </div>
                             <div class="cara atras">
                                 <img src="./images/logoatras.png" alt="E&M Solutions Respaldo">
@@ -127,11 +126,11 @@
                         </div>
                     </div>
                 </div>
-                <a href="#one" class="goto-next scrolly">Saber más</a>
+                <a href="#nosotros" class="goto-next scrolly">Saber más</a>
             </section>
 
-			<section id="one" class="spotlight style1 bottom">
-                <span class="image fit main"><img src="images/sec.png" alt="" /></span>
+			<section id="nosotros" class="spotlight style1 bottom">
+                <span class="image fit main"><img src="./images/sec.png" alt="" /></span>
                 <div class="content">
                     <div class="container">
                         <div class="row">
@@ -150,11 +149,11 @@
                         </div>
                     </div>
                 </div>
-                <a href="#two" class="goto-next scrolly">Siguiente</a>
+                <a href="#servicios" class="goto-next scrolly">Siguiente</a>
             </section>
 
-            <section id="two" class="spotlight style2 right" style="min-height: 100vh; display: flex; align-items: center;">
-                <span class="image fit main"><img src="images/centro.png" alt="" /></span>
+            <section id="servicios" class="spotlight style2 right" style="min-height: 100vh; display: flex; align-items: center;">
+                <span class="image fit main"><img src="./images/centro.png" alt="" /></span>
                 <div class="content" style="width: 45%; margin-left: auto; background: rgba(15, 24, 45, 0.9); padding: 3em; border-left: 4px solid #fff;">
                     <header>
                         <h2>Ingeniería Estratégica</h2>
@@ -175,102 +174,15 @@
                         </li>
                     </ul>
                 </div>
+                <a href="#consultoria" class="goto-next scrolly">Siguiente</a>
             </section>
 			
-			<section id="three" class="spotlight style3 left" style="min-height: 100vh; display: flex; align-items: center;">
-                <span class="image fit main"><img src="images/indexx.png" alt="" /></span>
+			<section id="consultoria" class="spotlight style3 left" style="min-height: 100vh; display: flex; align-items: center;">
+                <span class="image fit main"><img src="./images/indexx.png" alt="" /></span>
                 <div class="content" style="width: 45%; margin-right: auto; background: rgba(15, 24, 45, 0.9); padding: 3em; border-right: 4px solid #5090f0;">
                     <header>
                         <h2>Rigor y Visión</h2>
                         <p style="color: #5090f0;">Consultoría Integral</p>
                     </header>
                     <p>Alineamos la ingeniería con sus objetivos financieros:</p>
-                    <ul style="list-style: none; padding-left: 0;">
-                        <li><i class="icon solid fa-check-circle" style="color: #5090f0; margin-right: 10px;"></i> Optimización de procesos.</li>
-                        <li><i class="icon solid fa-check-circle" style="color: #5090f0; margin-right: 10px;"></i> Diagnóstico técnico de precisión.</li>
-                        <li><i class="icon solid fa-check-circle" style="color: #5090f0; margin-right: 10px;"></i> Seguridad jurídica SEC.</li>
-                    </ul>
-                    <ul class="actions">
-                        <li><a href="#five" class="button primary small">Contactar</a></li>
-                    </ul>
-                </div>
-            </section>
-
-			<section id="four" class="wrapper style1 special fade-up">
-                <div class="container">
-                    <header class="major">
-                        <h2>Capacidades Técnicas</h2>
-                        <p>Herramientas de estándar internacional.</p>
-                    </header>
-                    <div class="box alt">
-                        <div class="row gtr-uniform">
-                            <section class="col-4 col-6-medium col-12-xsmall">
-                                <span class="icon solid alt major fa-file-invoice"></span>
-                                <h3>TE1 y TE3</h3>
-                                <p>Tramitación ante la SEC.</p>
-                            </section>
-                            <section class="col-4 col-6-medium col-12-xsmall">
-                                <span class="icon solid alt major fa-microchip"></span>
-                                <h3>Simulación</h3>
-                                <p>Modelamiento de sistemas.</p>
-                            </section>
-                            <section class="col-4 col-6-medium col-12-xsmall">
-                                <span class="icon solid alt major fa-shield-alt"></span>
-                                <h3>Riesgos</h3>
-                                <p>Continuidad del negocio.</p>
-                            </section>
-                        </div>
-                    </div>
-                </div>
-            </section>
-								
-			<section id="five" class="wrapper style2 special fade">
-                <div class="container">
-                    <header>
-                        <h2>Solicite su Factibilidad</h2>
-                    </header>
-                    <form method="post" action="#" class="cta">
-                        <div class="row gtr-uniform gtr-50">
-                            <div class="col-6 col-12-xsmall"><input type="text" placeholder="Nombre" /></div>
-                            <div class="col-6 col-12-xsmall"><input type="text" placeholder="Empresa" /></div>
-                            <div class="col-12">
-                                <select>
-                                    <option value="">— Servicio —</option>
-                                    <option>Ingeniería</option>
-                                    <option>SEC / TE1</option>
-                                </select>
-                            </div>
-                            <div class="col-12"><textarea placeholder="Mensaje" rows="4"></textarea></div>
-                            <div class="col-12">
-                                <ul class="actions">
-                                    <li><input type="submit" value="Enviar" class="primary fit" /></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </section>
-
-			<footer id="footer">
-                <ul class="icons">
-                    <li><a href="#" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-                    <li><a href="https://www.instagram.com/eymsolutionsspa" class="icon brands alt fa-instagram" target="_blank"><span class="label">Instagram</span></a></li>
-                </ul>
-                <ul class="copyright">
-                    <li>&copy; Engineering and Management Solutions 2026.</li>
-                </ul>
-            </footer>
-
-		</div>
-
-		<script src="assets/js/jquery.min.js"></script>
-        <script src="assets/js/jquery.scrolly.min.js"></script>
-        <script src="assets/js/jquery.dropotron.min.js"></script>
-        <script src="assets/js/jquery.scrollex.min.js"></script>
-        <script src="assets/js/browser.min.js"></script>
-        <script src="assets/js/breakpoints.min.js"></script>
-        <script src="assets/js/util.js"></script>
-        <script src="assets/js/main.js"></script>
-	</body>
-
-</html>
+                    <ul style="list-
