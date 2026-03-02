@@ -8,7 +8,7 @@
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 
 <style>
-    /* 1. LOGO GIRATORIO - AJUSTADO PARA MÓVIL */
+    /* 1. LOGO GIRATORIO - OPTIMIZADO */
     .logo-escena {
         width: 250px;
         height: 250px;
@@ -17,7 +17,7 @@
     }
 
     @media screen and (max-width: 736px) {
-        .logo-escena { width: 180px; height: 180px; }
+        .logo-escena { width: 200px; height: 200px; }
     }
 
     .logo-tarjeta {
@@ -43,13 +43,29 @@
     }
 
     .frente { background: #ffffff; }
-    .frente img { width: 100%; height: 100%; object-fit: contain; padding: 20px; }
+    .frente img { width: 100%; height: 100%; object-fit: contain; padding: 25px; }
 
     .atras { background: #5090f0; transform: rotateY(180deg); }
     .atras img { width: 100%; height: 100%; object-fit: cover; }
 
-    /* 2. FIX PARA SECCIONES EN MÓVIL (Para que no se vean apretadas) */
+    /* 2. FIX PARA IMÁGENES Y SECCIONES EN MÓVIL */
     @media screen and (max-width: 980px) {
+        /* Forzar que las imágenes de fondo se vean en móvil */
+        .spotlight .image.main {
+            position: relative !important;
+            height: 250px !important;
+            display: block !important;
+            opacity: 1 !important;
+            visibility: visible !important;
+        }
+        .spotlight .image.main img {
+            position: relative !important;
+            object-fit: cover !important;
+            width: 100% !important;
+            height: 100% !important;
+        }
+
+        /* Ajuste de contenido para legibilidad */
         #two .content, #three .content {
             width: 100% !important;
             max-width: 100% !important;
@@ -59,8 +75,8 @@
             padding: 2em 1.5em !important;
             background: rgba(15, 24, 45, 0.98) !important;
         }
+        
         #two, #three { min-height: auto !important; height: auto !important; }
-        .image.fit.main { position: relative !important; height: 300px !important; }
     }
 </style>
 	</head>
@@ -106,7 +122,7 @@
                                 <img src="images/logo.png" alt="E&M Solutions">
                             </div>
                             <div class="cara atras">
-                                <img src="images/Logoatras.png" alt="E&M Solutions Respaldo">
+                                <img src="images/logoatras.png" alt="E&M Solutions Respaldo">
                             </div>
                         </div>
                     </div>
