@@ -8,16 +8,14 @@
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 
 <style>
-    /* ELIMINAR CÍRCULO DE CARGA (PRELOADER) */
-    body.is-preload::before, 
-    body.is-preload::after,
-    #loader {
-        display: none !important;
-        visibility: hidden !important;
-        opacity: 0 !important;
+ /* Forzamos que el contenedor principal sea visible siempre */
+    #page-wrapper {
+        opacity: 1 !important;
+        visibility: visible !important;
     }
-    
-    body.is-preload * {
+
+    /* Quitamos transiciones lentas al inicio para que cargue instantáneo */
+    body.is-preload *, body * {
         transition: none !important;
     }
 
