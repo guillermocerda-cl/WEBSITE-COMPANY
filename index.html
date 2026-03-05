@@ -308,8 +308,57 @@
     alert("Gracias, el mensaje ha sido enviado con éxito. Te contactaremos pronto.");
   };
 </script>
+<a href="https://wa.me/56953190698" class="whatsapp-button" target="_blank">
+    <i class="icon brands fa-whatsapp"></i>
+</a>
+
+<style>
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25d366;
+    color: #FFF !important;
+    border-radius: 50px;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+    z-index: 9999;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.whatsapp-button:hover {
+    background-color: #128c7e;
+    transform: scale(1.1);
+    color: #FFF !important;
+}
+
+/* Ajuste para móviles */
+@media screen and (max-width: 736px) {
+    .whatsapp-button {
+        width: 50px;
+        height: 50px;
+        font-size: 30px;
+        bottom: 15px;
+        right: 15px;
+    }
+}
+</style>
+
+
+
+
+
+
+		
 	</body>
 
 </html>
+
 
 
