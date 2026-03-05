@@ -239,25 +239,32 @@
                     <header>
                         <h2>Solicite su Factibilidad</h2>
                     </header>
-                    <form method="post" action="#" class="cta">
-                        <div class="row gtr-uniform gtr-50">
-                            <div class="col-6 col-12-xsmall"><input type="text" placeholder="Nombre" /></div>
-                            <div class="col-6 col-12-xsmall"><input type="text" placeholder="Empresa" /></div>
-                            <div class="col-12">
-                                <select>
-                                    <option value="">— Servicio —</option>
-                                    <option>Ingeniería</option>
-                                    <option>SEC / TE1</option>
-                                </select>
-                            </div>
-                            <div class="col-12"><textarea placeholder="Mensaje" rows="4"></textarea></div>
-                            <div class="col-12">
-                                <ul class="actions">
-                                    <li><input type="submit" value="Enviar" class="primary fit" /></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </form>
+                    <form method="POST" action="https://formspree.io/f/xjgabegn" class="cta">
+    <div class="row gtr-uniform gtr-50">
+        <div class="col-6 col-12-xsmall">
+            <input type="text" name="nombre" placeholder="Nombre" required />
+        </div>
+        <div class="col-6 col-12-xsmall">
+            <input type="text" name="empresa" placeholder="Empresa" required />
+        </div>
+        <div class="col-12">
+            <select name="servicio">
+                <option value="">— Servicio —</option>
+                <option value="Ingeniería">Ingeniería</option>
+                <option value="SEC / TE1">SEC / TE1</option>
+            </select>
+        </div>
+        <div class="col-12">
+            <textarea name="mensaje" placeholder="Mensaje" rows="4" required></textarea>
+        </div>
+        <input type="hidden" name="_subject" value="Nueva solicitud de factibilidad - eymsolutions.cl" />
+        <div class="col-12">
+            <ul class="actions">
+                <li><input type="submit" value="Enviar" class="primary fit" /></li>
+            </ul>
+        </div>
+    </div>
+</form>
                 </div>
             </section>
 
@@ -281,5 +288,11 @@
         <script src="assets/js/breakpoints.min.js"></script>
         <script src="assets/js/util.js"></script>
         <script src="assets/js/main.js"></script>
+<script>
+  const form = document.querySelector(".cta");
+  form.onsubmit = () => {
+    alert("Gracias, el mensaje ha sido enviado con éxito. Te contactaremos pronto.");
+  };
+</script>
 	</body>
 </html>
