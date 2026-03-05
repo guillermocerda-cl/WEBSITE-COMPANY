@@ -234,35 +234,50 @@
                 </div>
             </section>
 								
-			<section id="contacto" class="wrapper style2 special fade">
+		<section id="contacto" class="wrapper style2 special fade">
     <div class="container">
         <header>
             <h2>Solicite su Factibilidad</h2>
+            <p>Déjenos sus datos y un consultor de E&M Solutions lo contactará a la brevedad.</p>
         </header>
         <form method="POST" action="https://formspree.io/f/TU_ID_AQUI" class="cta">
             <div class="row gtr-uniform gtr-50">
                 <div class="col-6 col-12-xsmall">
-                    <input type="text" name="nombre" placeholder="Nombre" required />
+                    <input type="text" name="nombre" placeholder="Nombre Completo" required />
                 </div>
                 <div class="col-6 col-12-xsmall">
-                    <input type="text" name="empresa" placeholder="Empresa" required />
+                    <input type="text" name="empresa" placeholder="Empresa / Razón Social" required />
                 </div>
+                
+                <div class="col-6 col-12-xsmall">
+                    <input type="email" name="email" placeholder="Correo Electrónico (ej: nombre@empresa.cl)" required />
+                </div>
+                <div class="col-6 col-12-xsmall">
+                    <input type="tel" name="telefono" placeholder="Teléfono de Contacto (+569...)" required />
+                </div>
+
                 <div class="col-12">
-                    <select name="servicio">
-                        <option value="">— Servicio —</option>
-                        <option value="Ingeniería">Ingeniería</option>
-                        <option value="SEC / TE1">SEC / TE1</option>
+                    <select name="servicio" required>
+                        <option value="">— Seleccione el Tipo de Requerimiento —</option>
+                        <option value="Ingeniería Eléctrica">Proyectos de Ingeniería</option>
+                        <option value="Certificación SEC">Certificación SEC / TE1</option>
+                        <option value="Consultoría">Asesoría y Consultoría</option>
+                        <option value="Otras Consultas">Otras Consultas / General</option>
                     </select>
                 </div>
+
                 <div class="col-12">
-                    <textarea name="mensaje" placeholder="Mensaje" rows="4" required></textarea>
+                    <textarea name="mensaje" placeholder="Describa brevemente su requerimiento o consulta..." rows="4" required></textarea>
                 </div>
+
                 <div class="col-12">
                     <ul class="actions">
-                        <li><input type="submit" value="Enviar" class="primary fit" /></li>
+                        <li><input type="submit" value="Enviar Solicitud" class="primary fit" /></li>
                     </ul>
                 </div>
             </div>
+            
+            <input type="hidden" name="_subject" value="Nueva Solicitud de Factibilidad - eymsolutions.cl" />
         </form>
     </div>
 </section>
@@ -296,3 +311,4 @@
 	</body>
 
 </html>
+
