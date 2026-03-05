@@ -252,8 +252,8 @@
                 <div class="col-6 col-12-xsmall">
                     <input type="email" name="email" placeholder="Correo Electrónico (ej: nombre@empresa.cl)" required />
                 </div>
-              <div class="col-6 col-12-xsmall">
-    <input type="tel" name="telefono" id="telefono" placeholder="Teléfono de Contacto" required style="background: rgba(255, 255, 255, 0.075) !important; border-color: rgba(255, 255, 255, 0.25) !important; color: #ffffff !important;" />
+             <div class="col-6 col-12-xsmall">
+    <input type="text" name="telefono" id="telefono" placeholder="Teléfono de Contacto" required oninput="this.value = this.value.replace(/[^0-9+]/g, '');" />
 </div>
 
                 <div class="col-12">
@@ -359,6 +359,7 @@
 	</body>
 
 </html>
+
 
 
 
